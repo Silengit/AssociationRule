@@ -120,11 +120,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Apriori.cpp" />
+    <ClCompile Include="Assorule.cpp" />
+    <ClCompile Include="File.cpp" />
     <ClCompile Include="FpGrowth.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apriori.h" />
+    <ClInclude Include="Assorule.h" />
+    <ClInclude Include="File.h" />
     <ClInclude Include="FpGrowth.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

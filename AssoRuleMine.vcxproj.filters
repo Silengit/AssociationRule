@@ -24,12 +24,24 @@
     <ClCompile Include="FpGrowth.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Assorule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apriori.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="FpGrowth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Assorule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

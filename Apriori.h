@@ -1,19 +1,17 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <map>
-#include <string>
-using namespace std;
+#include "Assorule.h"
 
 class Apriori 
 {
 private:
 	vector<vector<string>> d;	//Dataset
-	int alpha;	//Threshold
+	int min_sup;	//min support
+	double min_conf;	//min confidence
+	map<vector<string>, int> freq_item_set;		
 public:
-	Apriori(vector<vector<string>> dataset, int threshold);
+	Apriori(vector<vector<string>> &dataset, int threshold, double confidence, int dummy);
 	void printDataSet();
-	void process();
-	vector<vector<string>> gen(vector<vector<string>> L_kminus1, int kminus1);
-	bool has_infrequency_subset(vector<string> c, vector<vector<string>> L_kminus1);
+	void process(int dummy);
+	vector<vector<string>> gen(map<vector<string>, int> &L_kminus1, int kminus1, int dummy);
+	bool has_infrequency_subset(vector<string> &c, map<vector<string>, int> &L_kminus1);
 };
